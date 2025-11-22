@@ -1,11 +1,14 @@
 # FakeNewsDetection-TFIDF-SVC
 
+<div align="center">
+  
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Hugging%20Face-Transformers-lightgrey)](https://huggingface.co/docs/transformers/index)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/igirishkumar/FakeNewsDetection-TFIDF-SVC/blob/main/main.ipynb)
 [![GitHub stars](https://img.shields.io/github/stars/igirishkumar/FakeNewsDetection-TFIDF-SVC?style=social)](https://github.com/igirishkumar/FakeNewsDetection-TFIDF-SVC/stargazers)
 
+</div>
 
 A concise and high‑performance benchmark comparing classical machine learning models with transformer-based approaches for clickbait and fake‑news headline classification.
 
