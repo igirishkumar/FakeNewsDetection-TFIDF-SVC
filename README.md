@@ -1,4 +1,4 @@
-# FakeNewsDetection-TFIDF-SVC
+# FakeNewsDetection-NLP-BERT
 
 <div align="center">
   
