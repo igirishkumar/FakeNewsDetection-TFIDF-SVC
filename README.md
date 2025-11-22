@@ -1,8 +1,15 @@
 # FakeNewsDetection-TFIDF-SVC
 
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange)](https://pytorch.org/)
+[![Transformers](https://img.shields.io/badge/Hugging%20Face-Transformers-lightgrey)](https://huggingface.co/docs/transformers/index)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/igirishkumar/FakeNewsDetection-TFIDF-SVC/blob/main/main.ipynb)
+[![GitHub stars](https://img.shields.io/github/stars/igirishkumar/FakeNewsDetection-TFIDF-SVC?style=social)](https://github.com/igirishkumar/FakeNewsDetection-TFIDF-SVC/stargazers)
+
+
 A concise and high‑performance benchmark comparing classical machine learning models with transformer-based approaches for clickbait and fake‑news headline classification.
 
-## Overview
+## Project Overview
 
 This project offers an efficient solution for clickbait and fake-news headline detection, comparing classical ML methods (Word2Vec, BOW, TF-IDF) with fine-tuned BERT transformers. It includes a complete text-processing pipeline, feature extraction, reproducible experiments, and ready-to-use training and inference scripts.
 
@@ -14,7 +21,7 @@ This project offers an efficient solution for clickbait and fake-news headline d
 * Transformer Tokenization for Deep Learning models.
 * Optimization using GridSearchCV and RandomizedSearchCV for ML models.
 
-## Key Results
+## Results & Model Comparison
 
 | Rank | Model / Representation                  | Validation Accuracy |
 |------|-----------------------------------------|---------------------|
@@ -26,8 +33,24 @@ This project offers an efficient solution for clickbait and fake-news headline d
 | 6    | Bag-of-Words + MultinomialNB            | 93.85%              |
 | 7    | Word2Vec (averaged) + XGBoost           | 92.55%              |
 
-**Best Overall**: BERT / RoBERTa → **98.62%**  
-**Best Classical Model**: TF-IDF (1–3 n‑grams) + Logistic Regression → **94.45%**  
+> **Best Overall**: BERT / RoBERTa → **98.62%**  
+> **Best Classical Model**: TF-IDF (1–3 n‑grams) + Logistic Regression → **94.45%**
+
+## Tech Stack & Tools
+
+| Category              | Tools / Libraries Used                             |
+|-----------------------|----------------------------------------------------|
+| Framework / ML        | scikit-learn, XGBoost                               |
+| Deep Learning         | PyTorch, Hugging Face Transformers (BERT/RoBERTa) |
+| Text Preprocessing    | NLTK, regex, BeautifulSoup4                         |
+| Feature Extraction    | TF-IDF, Bag-of-Words, Word2Vec                      |
+| Tokenization          | Hugging Face Tokenizers                              |
+| Model Optimization    | GridSearchCV, RandomizedSearchCV                    |
+| Evaluation Metrics    | Accuracy, F1-Score, Confusion Matrix                |
+| Visualization         | Matplotlib, Seaborn                                  |
+| Environment           | Local CPU / GPU, Google Colab                        |
+| Version Control       | Git & GitHub                                        |
+
 
 ## Installation
 
@@ -38,16 +61,10 @@ python -m venv venv
 source venv/bin/activate   # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
+## Authors
 
-## Citation
-
-```bibtex
-@software{kumar2025clickbait,
-  author = {Girish Kumar},
-  title = {FakeNewsDetection-TFIDF-SVC: High-Accuracy Clickbait Detection with Classical ML},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/igirishkumar/FakeNewsDetection-TFIDF-SVC}
-}
-```
+- **Girish Kumar**  
+  GitHub: [@igirishkumar](https://github.com/igirishkumar)  
+  Role: Model architecture, classical ML pipeline, transformer fine-tuning,  
+        text preprocessing, feature engineering, results visualization, README & documentation
 
