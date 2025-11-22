@@ -4,7 +4,7 @@ A concise and high‑performance benchmark comparing classical machine learning 
 
 ## Overview
 
-This project demonstrates that a well‑optimized **TF‑IDF + LinearSVC** pipeline can achieve **94.45%** accuracy—competitive with or better than many transformer baselines—while training quickly on CPU. The repository provides a clean, modular starting point for text‑classification tasks.
+This project offers an efficient solution for clickbait and fake-news headline detection, comparing classical ML methods (Word2Vec, BOW, TF-IDF) with fine-tuned BERT transformers. It includes a complete text-processing pipeline, feature extraction, reproducible experiments, and ready-to-use training and inference scripts.
 
 ## Features
 
@@ -16,24 +16,18 @@ This project demonstrates that a well‑optimized **TF‑IDF + LinearSVC** pipel
 
 ## Key Results
 
-| Representation | Best Model          | Accuracy   |
-| -------------- | ------------------- | ---------- |
-| Bag‑of‑Words   | Logistic Regression | 94%        |
-| Bag‑of‑Words   | MultinomialNB       | 93.85%     |
-| Word2Vec Avg.  | XGBoost             | 92.55%     |
-| TF‑IDF         | Logistic Regression | **94.45%** |
-| TF‑IDF         | LinearSVC           | 94.31%     |
-| TF‑IDF         | MultinomialNB       | 93.87%     |
+| Rank | Model / Representation                  | Validation Accuracy |
+|------|-----------------------------------------|---------------------|
+| 1    | **BERT / RoBERTa (fine-tuned)**         | **98.62%**          |
+| 2    | **TF-IDF + Logistic Regression**        | **94.45%**          |
+| 3    | Bag-of-Words + Logistic Regression      | 94.00%              |
+| 4    | TF-IDF + LinearSVC                      | 94.31%              |
+| 5    | TF-IDF + MultinomialNB                  | 93.87%              |
+| 6    | Bag-of-Words + MultinomialNB            | 93.85%              |
+| 7    | Word2Vec (averaged) + XGBoost           | 92.55%              |
 
-**Top Performer:** TF‑IDF (1–3 n‑grams) with Logistic Regression.
-
-## Features
-
-* Full preprocessing pipeline (HTML removal, cleaning, lemmatization, stopwords)
-* Multiple feature extractors: BoW, TF‑IDF, Word2Vec
-* Comparison of 7 different classifiers including Random Forest, SVM, Naive Bayes, and BERT.
-* Transformer Tokenization for Deep Learning models.
-* Optimization using GridSearchCV and RandomizedSearchCV for ML models.
+**Best Overall**: BERT / RoBERTa → **98.62%**  
+**Best Classical Model**: TF-IDF (1–3 n‑grams) + Logistic Regression → **94.45%**  
 
 ## Installation
 
